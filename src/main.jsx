@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { createRoot } from "react-dom/client";
 
 // ── Logo placeholder (replaced at build) ─────────────────────────────────────
 const LOGO_B64 = "";
@@ -1402,3 +1403,4 @@ export default function App() {
     </div>
   );
 }
+createRoot(document.getElementById("root")).render(<App/>);
